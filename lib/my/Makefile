@@ -16,6 +16,7 @@ all: $(NAME)
 $(NAME):	$(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@mv $(NAME) ../
+	@cp mylib.h ../../include
 
 clean:
 	@rm -rf $(OBJ)

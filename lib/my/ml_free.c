@@ -7,7 +7,7 @@
 
 #include "mylib.h"
 
-void free_array(char **array)
+void ml_free_array(char **array)
 {
     for (int i = 0; array[i]; i++)
         free(array[i]);
