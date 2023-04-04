@@ -78,20 +78,3 @@ void ml_printf(char *format, ...)
     }
     va_end(list);
 }
-
-int main(void)
-{
-    char *str = "khqdjq";
-
-    ml_printf("coucou\n");
-    ml_printf("test integer 1: %d, %i\n", 12, 23);
-    ml_printf("test str and char 1: %s, %c\n", "derer", 'c');
-    ml_printf("test float : %f%%, %n\n%z", 23.764f);
-    ml_printf("test pointer : %p\n", str);
-    ml_printf("test 0 format: %03d %n\n", 23);
-    ml_printf("test precision : %.3f\n", 23.5f);
-    ml_printf("test precision : %f\n", -23.05);
-    ml_printf("test precision : %+f\n", 23.05);
-    ml_printf("coucou %d\n", 42);
-    return SUCCESS;
-}
