@@ -6,7 +6,6 @@
 */
 
 #include "../include/printf.h"
-#include <stdio.h>
 
 static info_t get_info(char **format, va_list list)
 {
