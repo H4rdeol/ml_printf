@@ -37,6 +37,15 @@ void print_unsigned_int(va_list list, info_t *info)
 {
     unsigned int nb = (unsigned int)va_arg(list, unsigned int);
 
+    if (info->sign)
+        ml_fputchar('+', info->fd);
     write_unsigned_int(nb, info->fd);
     info->printed_char += len_unsignedint(nb);
+}
+
+void print_percent(va_list list, info_t *info)
+{
+    UNUSED(list);
+    ml_fputchar('%', info->fd);
+    info->printed_char++;
 }

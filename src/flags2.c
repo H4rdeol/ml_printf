@@ -13,7 +13,7 @@ static int write_hexa_ptr(unsigned long nbr, char const *base, int fd)
     int len = ml_strlen(base);
     int count = 0;
 
-    if (nbr >= len){
+    if (nbr >= (unsigned long)len){
         i = nbr % len;
         nbr = (nbr - i) / len;
         count++;
