@@ -58,6 +58,7 @@ static char *format_func(char *format, info_t *info)
 
 void ml_printf(char *format, ...)
 {
+    ml_putstr("Bebou !\n"); return;
     va_list list;
     info_t info;
     int error = 0;
